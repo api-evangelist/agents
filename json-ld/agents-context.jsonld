@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "agents": "https://api-evangelist.github.io/agents/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+
+    "AgentDefinition": "agents:AgentDefinition",
+    "AgentRun": "prov:Activity",
+    "Tool": "agents:Tool",
+    "Step": "agents:Step",
+
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+
+    "framework": {
+      "@id": "agents:framework",
+      "@type": "xsd:string"
+    },
+    "model": {
+      "@id": "agents:model",
+      "@type": "@id"
+    },
+    "instructions": {
+      "@id": "agents:instructions",
+      "@type": "xsd:string"
+    },
+    "tools": {
+      "@id": "agents:tools",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "memory": {
+      "@id": "agents:memory",
+      "@type": "@id"
+    },
+    "guardrails": {
+      "@id": "agents:guardrails",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "schema:keywords",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+
+    "run_id": "@id",
+    "agent_id": {
+      "@id": "agents:agent",
+      "@type": "@id"
+    },
+    "goal": {
+      "@id": "agents:goal",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "agents:status",
+      "@type": "xsd:string"
+    },
+    "started_at": {
+      "@id": "prov:startedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "ended_at": {
+      "@id": "prov:endedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "steps": {
+      "@id": "agents:steps",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "result": {
+      "@id": "agents:result",
+      "@type": "@id"
+    },
+    "metrics": {
+      "@id": "agents:metrics",
+      "@type": "@id"
+    },
+    "trace_url": {
+      "@id": "agents:trace",
+      "@type": "@id"
+    },
+    "input_tokens": {
+      "@id": "agents:input_tokens",
+      "@type": "xsd:integer"
+    },
+    "output_tokens": {
+      "@id": "agents:output_tokens",
+      "@type": "xsd:integer"
+    },
+    "tool_call_count": {
+      "@id": "agents:tool_call_count",
+      "@type": "xsd:integer"
+    },
+    "cost_usd": {
+      "@id": "agents:cost_usd",
+      "@type": "xsd:decimal"
+    }
+  }
+}

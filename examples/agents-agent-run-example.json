@@ -1,0 +1,66 @@
+{
+  "run_id": "run_01HXY8N3JV3QABC",
+  "agent_id": "support-triage-agent",
+  "framework": "langgraph",
+  "goal": "Triage ticket #4821 from Acme Corp about a failed invoice export.",
+  "status": "completed",
+  "started_at": "2026-05-19T14:22:01Z",
+  "ended_at": "2026-05-19T14:22:38Z",
+  "steps": [
+    {
+      "index": 1,
+      "type": "thought",
+      "name": "classify_intent",
+      "output": { "category": "billing", "confidence": 0.94 },
+      "started_at": "2026-05-19T14:22:02Z",
+      "duration_ms": 380
+    },
+    {
+      "index": 2,
+      "type": "tool_call",
+      "name": "lookup_customer",
+      "input": { "email": "ops@acmecorp.example" },
+      "started_at": "2026-05-19T14:22:03Z",
+      "duration_ms": 210
+    },
+    {
+      "index": 3,
+      "type": "tool_result",
+      "name": "lookup_customer",
+      "output": { "customer_id": "cust_8821", "plan": "enterprise" },
+      "started_at": "2026-05-19T14:22:03Z",
+      "duration_ms": 12
+    },
+    {
+      "index": 4,
+      "type": "tool_call",
+      "name": "search_knowledge_base",
+      "input": { "query": "invoice export failed enterprise" },
+      "started_at": "2026-05-19T14:22:04Z",
+      "duration_ms": 412
+    },
+    {
+      "index": 5,
+      "type": "message",
+      "name": "reply_to_customer",
+      "output": { "article_id": "BL-302", "reply_sent": true },
+      "started_at": "2026-05-19T14:22:35Z",
+      "duration_ms": 980
+    }
+  ],
+  "result": {
+    "summary": "Classified as billing; resolved with KB article BL-302.",
+    "output": {
+      "category": "billing",
+      "resolution": "auto-resolved",
+      "kb_article": "BL-302"
+    }
+  },
+  "metrics": {
+    "input_tokens": 1820,
+    "output_tokens": 612,
+    "tool_call_count": 3,
+    "cost_usd": 0.0184
+  },
+  "trace_url": "https://app.portkey.ai/traces/run_01HXY8N3JV3QABC"
+}

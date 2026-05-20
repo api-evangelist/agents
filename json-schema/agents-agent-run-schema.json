@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/json-schema/agents-agent-run-schema.json",
+  "title": "AgentRun",
+  "description": "A single execution (run) of an AI agent against a user goal, including its steps, tool calls, status, and metrics.",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "Stable identifier for this agent run.",
+      "example": "run_01HXY8N3JV3QABC"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Identifier of the agent being executed.",
+      "example": "support-triage-agent"
+    },
+    "framework": {
+      "type": "string",
+      "description": "Framework or runtime that executed the run.",
+      "example": "langgraph"
+    },
+    "goal": {
+      "type": "string",
+      "description": "Natural-language goal or input given to the agent.",
+      "example": "Triage ticket #4821 from Acme Corp about a failed invoice export."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["queued", "running", "awaiting-human", "completed", "failed", "cancelled"],
+      "description": "Current status of the run.",
+      "example": "completed"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the run started.",
+      "example": "2026-05-19T14:22:01Z"
+    },
+    "ended_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the run finished.",
+      "example": "2026-05-19T14:22:38Z"
+    },
+    "steps": {
+      "type": "array",
+      "description": "Ordered list of steps taken by the agent.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": { "type": "integer", "example": 1 },
+          "type": {
+            "type": "string",
+            "enum": ["thought", "tool_call", "tool_result", "message", "handoff", "decision"],
+            "example": "tool_call"
+          },
+          "name": { "type": "string", "example": "search_knowledge_base" },
+          "input": { "type": "object" },
+          "output": { "type": "object" },
+          "started_at": { "type": "string", "format": "date-time" },
+          "duration_ms": { "type": "integer", "example": 412 }
+        },
+        "required": ["index", "type"]
+      }
+    },
+    "result": {
+      "type": "object",
+      "description": "Final result produced by the agent.",
+      "properties": {
+        "summary": { "type": "string", "example": "Classified as billing; resolved with KB article BL-302." },
+        "output": { "type": "object" }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Run-level metrics.",
+      "properties": {
+        "input_tokens": { "type": "integer", "example": 1820 },
+        "output_tokens": { "type": "integer", "example": 612 },
+        "tool_call_count": { "type": "integer", "example": 3 },
+        "cost_usd": { "type": "number", "example": 0.0184 }
+      }
+    },
+    "trace_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to a detailed trace of this run in an observability platform.",
+      "example": "https://app.portkey.ai/traces/run_01HXY8N3JV3QABC"
+    }
+  },
+  "required": ["run_id", "agent_id", "goal", "status"]
+}

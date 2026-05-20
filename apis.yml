@@ -1,0 +1,146 @@
+aid: agents
+name: Agents
+description: >-
+  An index and topic collection covering AI agents, agent frameworks, and agent runtimes that enable autonomous reasoning, tool use, and multi-step task execution. This profile catalogs the platforms and open-source projects that let developers
+  build, orchestrate, and deploy LLM-powered agents, including foundational frameworks like LangChain, LangGraph, CrewAI, AutoGen, and AutoGPT, hosted agent platforms like Lindy, Relevance AI, and Composio, and provider-native agent runtimes
+  from OpenAI, Anthropic, Google, and Microsoft. Distinct from foundation models and from Agent Skills (capability packages), the Agents topic focuses on the orchestration layer where planning, memory, tool calling, and execution come together.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- AI Agents
+- Agent Frameworks
+- Agent Orchestration
+- Agent Runtimes
+- LLM Orchestration
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/apis.yml
+created: '2026-05-19'
+modified: '2026-05-19'
+specificationVersion: '0.19'
+apis: []
+network:
+- name: Agentic AI Foundation
+  url: https://raw.githubusercontent.com/api-evangelist/agentic-ai-foundation/refs/heads/main/apis.yml
+- name: AgentGateway
+  url: https://raw.githubusercontent.com/api-evangelist/agentgateway/refs/heads/main/apis.yml
+- name: AgentQL
+  url: https://raw.githubusercontent.com/api-evangelist/agentql/refs/heads/main/apis.yml
+- name: Amazon Bedrock
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-bedrock/refs/heads/main/apis.yml
+- name: Anthropic
+  url: https://raw.githubusercontent.com/api-evangelist/anthropic/refs/heads/main/apis.yml
+- name: AutoGen
+  url: https://raw.githubusercontent.com/api-evangelist/autogen/refs/heads/main/apis.yml
+- name: AutoGPT
+  url: https://raw.githubusercontent.com/api-evangelist/autogpt/refs/heads/main/apis.yml
+- name: Bifrost
+  url: https://raw.githubusercontent.com/api-evangelist/bifrost/refs/heads/main/apis.yml
+- name: Composio
+  url: https://raw.githubusercontent.com/api-evangelist/composio/refs/heads/main/apis.yml
+- name: CrewAI
+  url: https://raw.githubusercontent.com/api-evangelist/crewai/refs/heads/main/apis.yml
+- name: Google ADK
+  url: https://raw.githubusercontent.com/api-evangelist/google-adk/refs/heads/main/apis.yml
+- name: Google Vertex AI
+  url: https://raw.githubusercontent.com/api-evangelist/google-vertex-ai/refs/heads/main/apis.yml
+- name: Haystack
+  url: https://raw.githubusercontent.com/api-evangelist/haystack/refs/heads/main/apis.yml
+- name: Jentic
+  url: https://raw.githubusercontent.com/api-evangelist/jentic/refs/heads/main/apis.yml
+- name: kagent
+  url: https://raw.githubusercontent.com/api-evangelist/kagent/refs/heads/main/apis.yml
+- name: LangChain
+  url: https://raw.githubusercontent.com/api-evangelist/langchain/refs/heads/main/apis.yml
+- name: LangGraph
+  url: https://raw.githubusercontent.com/api-evangelist/langgraph/refs/heads/main/apis.yml
+- name: Letta
+  url: https://raw.githubusercontent.com/api-evangelist/letta/refs/heads/main/apis.yml
+- name: Lindy
+  url: https://raw.githubusercontent.com/api-evangelist/lindy/refs/heads/main/apis.yml
+- name: LiveKit
+  url: https://raw.githubusercontent.com/api-evangelist/livekit/refs/heads/main/apis.yml
+- name: LlamaIndex
+  url: https://raw.githubusercontent.com/api-evangelist/llamaindex/refs/heads/main/apis.yml
+- name: Microsoft Azure AI Foundry
+  url: https://raw.githubusercontent.com/api-evangelist/azure-ai-foundry/refs/heads/main/apis.yml
+- name: Microsoft Power Virtual Agents
+  url: https://raw.githubusercontent.com/api-evangelist/microsoft-power-virtual-agents/refs/heads/main/apis.yml
+- name: OpenAI
+  url: https://raw.githubusercontent.com/api-evangelist/openai/refs/heads/main/apis.yml
+- name: Portkey
+  url: https://raw.githubusercontent.com/api-evangelist/portkey/refs/heads/main/apis.yml
+- name: Relevance AI
+  url: https://raw.githubusercontent.com/api-evangelist/relevance-ai/refs/heads/main/apis.yml
+- name: Restack
+  url: https://raw.githubusercontent.com/api-evangelist/restack/refs/heads/main/apis.yml
+- name: Stackmint
+  url: https://raw.githubusercontent.com/api-evangelist/stackmint/refs/heads/main/apis.yml
+- name: SuperAgent
+  url: https://raw.githubusercontent.com/api-evangelist/superagent/refs/heads/main/apis.yml
+- name: Toolhouse
+  url: https://raw.githubusercontent.com/api-evangelist/toolhouse/refs/heads/main/apis.yml
+- name: Trigger.dev
+  url: https://raw.githubusercontent.com/api-evangelist/trigger-dev/refs/heads/main/apis.yml
+- name: TrueFoundry
+  url: https://raw.githubusercontent.com/api-evangelist/truefoundry/refs/heads/main/apis.yml
+common:
+- type: Portal
+  url: https://apievangelist.com
+- type: GitHubOrganization
+  url: https://github.com/api-evangelist
+- type: Features
+  data:
+  - name: Planning and Reasoning Loops
+    description: Agent frameworks like LangGraph, AutoGen, and CrewAI provide structured loops for planning, reflection, and multi-step reasoning over user goals, breaking complex tasks into ordered sub-tasks.
+  - name: Tool Calling and Function Use
+    description: Agents invoke external functions, APIs, and aggregated tool catalogs through provider-native tool calling, expanding their reach beyond text generation into real-world action.
+  - name: Memory and State Management
+    description: Frameworks like Letta and LangGraph provide persistent memory, conversation state, and long-running execution context so agents can resume work, remember users, and accumulate knowledge over time.
+  - name: Multi-Agent Orchestration
+    description: CrewAI, AutoGen, and LangGraph enable multiple specialized agents to collaborate, delegate sub-tasks, and reach consensus, modeling teams of role-based workers around a shared goal.
+  - name: Provider-Native Agent Runtimes
+    description: OpenAI Assistants, Anthropic Claude tool use, Google ADK, Amazon Bedrock Agents, and Microsoft Azure AI Foundry expose first-party agent runtimes that handle planning, tool invocation, and state on the model provider side.
+  - name: Browser and Web Agents
+    description: Agents like AgentQL and browser-driving frameworks let LLMs navigate real web pages, fill forms, and extract structured data, extending agent reach to systems that lack APIs.
+  - name: Observability and Evaluation
+    description: Platforms like Portkey, TrueFoundry, and Bifrost provide tracing, evaluation, cost tracking, and gateway routing across agent runs to make agent behavior observable and debuggable.
+  - name: Open Governance and Interoperability
+    description: The Linux Foundation Agentic AI Foundation and projects like kagent and AgentGateway are establishing open standards for agent-to-agent communication, identity, and runtime portability.
+- type: UseCases
+  data:
+  - name: Customer Support Automation
+    description: Hosted agent platforms like Lindy, Relevance AI, and Microsoft Power Virtual Agents handle inbound support tickets, route conversations, and resolve common requests end-to-end.
+  - name: Research and Knowledge Work
+    description: LangChain and LlamaIndex agents combine retrieval over enterprise documents with reasoning to answer complex questions and synthesize multi-source briefings.
+  - name: Sales and Outbound Workflows
+    description: Agents built on Lindy, Relevance AI, and Composio prospect leads, draft outreach, log CRM activity, and orchestrate multi-step sales sequences.
+  - name: Software Engineering Agents
+    description: AutoGPT, AutoGen, and CrewAI-based engineering agents read repositories, draft pull requests, run tests, and iterate on code under human review.
+  - name: Voice and Telephony Agents
+    description: LiveKit and similar runtimes power real-time voice agents that handle phone calls, meetings, and live conversations using streaming LLMs and tool calling.
+  - name: Internal Operations and IT Automation
+    description: Agentic platforms like Restack, Trigger.dev, and Stackmint orchestrate long-running internal workflows across SaaS, databases, and identity systems.
+  - name: Multi-Agent Team Simulations
+    description: CrewAI and AutoGen model role-based teams (researcher, writer, reviewer) collaborating on a single deliverable, producing higher-quality output than a single agent.
+- type: Integrations
+  data:
+  - name: LangChain
+    description: The most widely used open-source framework for building LLM applications, including chains, agents, retrieval, memory, and tool calling across dozens of providers.
+  - name: LangGraph
+    description: A graph-based runtime from LangChain for stateful, multi-actor, long-running agent workflows with checkpointing and human-in-the-loop.
+  - name: CrewAI
+    description: Multi-agent framework for orchestrating role-based agent crews that collaborate on complex tasks.
+  - name: AutoGen
+    description: Microsoft's open-source framework for building multi-agent conversations with planner, executor, and critic roles.
+  - name: Composio
+    description: Agent execution platform exposing 1000+ apps as governed tools for any agent framework or model.
+  - name: Letta
+    description: Stateful agent platform (formerly MemGPT) focused on long-term memory and persistent agent identity.
+  - name: OpenAI Assistants
+    description: OpenAI's hosted agent runtime with built-in tool use, retrieval, code interpreter, and threads.
+  - name: Amazon Bedrock Agents
+    description: AWS's managed agent runtime over foundation models with action groups, knowledge bases, and guardrails.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+humanURL: https://apievangelist.com

@@ -1,0 +1,322 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Agents
+  description: Vocabulary for the AI Agents topic, covering agent frameworks, hosted agent platforms, provider-native agent runtimes, and the resources, actions, and personas involved in building and operating agents.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: LangChain
+      namespace: langchain
+      status: active
+    - name: LangGraph
+      namespace: langgraph
+      status: active
+    - name: CrewAI
+      namespace: crewai
+      status: active
+    - name: AutoGen
+      namespace: autogen
+      status: active
+    - name: OpenAI Assistants
+      namespace: openai
+      status: active
+    - name: Amazon Bedrock Agents
+      namespace: amazon-bedrock
+      status: active
+    - name: Composio
+      namespace: composio
+      status: active
+    - name: Letta
+      namespace: letta
+      status: active
+
+  resources:
+    - name: agents
+      description: Declarative agent definitions including model, instructions, tools, and memory
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+        - run
+    - name: runs
+      description: Individual executions of an agent against a goal, with steps, status, and metrics
+      actions:
+        - list
+        - get
+        - create
+        - cancel
+    - name: tools
+      description: Functions, APIs, and capabilities available to an agent at runtime
+      actions:
+        - list
+        - get
+        - register
+        - invoke
+    - name: memory
+      description: Persistent or working memory used by an agent across runs and conversations
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+    - name: threads
+      description: Multi-turn conversation threads or sessions associated with an agent
+      actions:
+        - list
+        - get
+        - create
+        - delete
+    - name: traces
+      description: Detailed step-level traces of an agent run for observability and debugging
+      actions:
+        - list
+        - get
+    - name: crews
+      description: Multi-agent teams composed of role-based agents collaborating on a shared goal
+      actions:
+        - list
+        - get
+        - create
+        - run
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+    - name: run
+      description: Execute an agent or crew against a goal
+      httpMethod: POST
+      pattern: invoke
+    - name: cancel
+      description: Cancel a running agent run
+      httpMethod: POST
+      pattern: control
+    - name: register
+      description: Register a new tool with an agent or platform
+      httpMethod: POST
+      pattern: write
+    - name: invoke
+      description: Invoke a tool from inside an agent run
+      httpMethod: POST
+      pattern: invoke
+
+  schemas:
+    core:
+      - name: AgentDefinition
+        description: Declarative definition of an AI agent
+        properties:
+          - id
+          - name
+          - description
+          - framework
+          - model
+          - instructions
+          - tools
+          - memory
+          - guardrails
+          - tags
+      - name: AgentRun
+        description: A single execution of an agent against a goal
+        properties:
+          - run_id
+          - agent_id
+          - framework
+          - goal
+          - status
+          - started_at
+          - ended_at
+          - steps
+          - result
+          - metrics
+          - trace_url
+
+  enums:
+    frameworks:
+      - langchain
+      - langgraph
+      - crewai
+      - autogen
+      - autogpt
+      - haystack
+      - llamaindex
+      - letta
+      - openai-assistants
+      - anthropic-claude
+      - bedrock-agents
+      - vertex-ai-agents
+      - azure-ai-foundry
+      - google-adk
+      - lindy
+      - relevance-ai
+      - custom
+    run_statuses:
+      - queued
+      - running
+      - awaiting-human
+      - completed
+      - failed
+      - cancelled
+    step_types:
+      - thought
+      - tool_call
+      - tool_result
+      - message
+      - handoff
+      - decision
+    tool_types:
+      - function
+      - api
+      - mcp
+      - code-interpreter
+      - retrieval
+      - web-browse
+    memory_types:
+      - none
+      - short-term
+      - long-term
+      - persistent
+
+capability:
+  workflows:
+    - name: Single-Agent Tool Use
+      description: A single agent receives a goal, plans, calls tools, and returns a result
+      apis:
+        - langchain
+        - openai
+        - anthropic
+      personas:
+        - Agent Developer
+      domains:
+        - Agent Frameworks
+    - name: Multi-Agent Collaboration
+      description: A crew of role-based agents collaborates on a complex task with planner, executor, and reviewer roles
+      apis:
+        - crewai
+        - autogen
+        - langgraph
+      personas:
+        - Agent Developer
+      domains:
+        - Multi-Agent Orchestration
+    - name: Stateful Long-Running Agents
+      description: Agents persist memory and resume across sessions, supporting long-horizon workflows
+      apis:
+        - letta
+        - langgraph
+        - restack
+      personas:
+        - Platform Engineer
+      domains:
+        - Agent Runtimes
+    - name: Hosted Agent Operations
+      description: Business users configure and operate agents on a hosted platform without writing framework code
+      apis:
+        - lindy
+        - relevance-ai
+        - microsoft-power-virtual-agents
+      personas:
+        - Agent Operator
+      domains:
+        - Hosted Agent Platforms
+    - name: Agent Observability and Governance
+      description: Engineers trace, evaluate, and govern agent runs across cost, safety, and quality dimensions
+      apis:
+        - portkey
+        - truefoundry
+        - bifrost
+      personas:
+        - Platform Engineer
+      domains:
+        - Agent Observability
+
+  personas:
+    - id: agent-developer
+      name: Agent Developer
+      description: Engineers building agents on top of frameworks like LangChain, LangGraph, CrewAI, or provider-native runtimes
+      workflows:
+        - Single-Agent Tool Use
+        - Multi-Agent Collaboration
+    - id: platform-engineer
+      name: Platform Engineer
+      description: Engineers operating shared agent infrastructure, runtimes, gateways, and observability
+      workflows:
+        - Stateful Long-Running Agents
+        - Agent Observability and Governance
+    - id: agent-operator
+      name: Agent Operator
+      description: Business users who configure, monitor, and tune agents on hosted platforms without deep framework knowledge
+      workflows:
+        - Hosted Agent Operations
+
+  domains:
+    - name: Agent Frameworks
+      description: Open-source frameworks for building agents (LangChain, LangGraph, CrewAI, AutoGen, AutoGPT, Haystack, LlamaIndex)
+    - name: Multi-Agent Orchestration
+      description: Patterns and runtimes for coordinating multiple specialized agents toward a shared goal
+    - name: Agent Runtimes
+      description: Hosted or self-hosted runtimes that execute agents, manage state, and provide checkpointing
+    - name: Hosted Agent Platforms
+      description: Vendor platforms that provide end-to-end agent building, hosting, and operations for business users
+    - name: Agent Observability
+      description: Tracing, evaluation, cost tracking, and governance across agent runs
+
+crossReference:
+  - resource: agents
+    operations:
+      - create
+      - run
+      - list
+    workflows:
+      - Single-Agent Tool Use
+      - Hosted Agent Operations
+    personas:
+      - Agent Developer
+      - Agent Operator
+  - resource: runs
+    operations:
+      - get
+      - list
+      - cancel
+    workflows:
+      - Agent Observability and Governance
+    personas:
+      - Platform Engineer
+  - resource: crews
+    operations:
+      - create
+      - run
+    workflows:
+      - Multi-Agent Collaboration
+    personas:
+      - Agent Developer
+  - resource: memory
+    operations:
+      - get
+      - update
+    workflows:
+      - Stateful Long-Running Agents
+    personas:
+      - Platform Engineer

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/json-schema/agents-agent-definition-schema.json",
+  "title": "AgentDefinition",
+  "description": "Declarative definition of an AI agent: its identity, model, instructions, tools, memory, and runtime configuration.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the agent.",
+      "example": "support-triage-agent"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the agent.",
+      "example": "Support Triage Agent"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this agent does and when it should be used.",
+      "example": "Triages inbound support tickets, classifies intent, and either resolves or hands off to a human."
+    },
+    "framework": {
+      "type": "string",
+      "description": "Framework or runtime this agent is built on.",
+      "enum": [
+        "langchain",
+        "langgraph",
+        "crewai",
+        "autogen",
+        "autogpt",
+        "haystack",
+        "llamaindex",
+        "letta",
+        "openai-assistants",
+        "anthropic-claude",
+        "bedrock-agents",
+        "vertex-ai-agents",
+        "azure-ai-foundry",
+        "google-adk",
+        "lindy",
+        "relevance-ai",
+        "custom"
+      ],
+      "example": "langgraph"
+    },
+    "model": {
+      "type": "object",
+      "description": "Foundation model backing the agent.",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "description": "Model provider.",
+          "example": "anthropic"
+        },
+        "name": {
+          "type": "string",
+          "description": "Model identifier.",
+          "example": "claude-opus-4-7"
+        },
+        "temperature": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "example": 0.2
+        }
+      },
+      "required": ["provider", "name"]
+    },
+    "instructions": {
+      "type": "string",
+      "description": "System prompt or instructions that define the agent's behavior.",
+      "example": "You are a support triage agent. Classify each ticket into one of: billing, technical, account, other. Resolve simple cases using the knowledge base; escalate the rest."
+    },
+    "tools": {
+      "type": "array",
+      "description": "Tools the agent is allowed to call.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "search_knowledge_base" },
+          "type": {
+            "type": "string",
+            "enum": ["function", "api", "mcp", "code-interpreter", "retrieval", "web-browse"],
+            "example": "function"
+          },
+          "description": { "type": "string", "example": "Search the support knowledge base for relevant articles." }
+        },
+        "required": ["name", "type"]
+      }
+    },
+    "memory": {
+      "type": "object",
+      "description": "Memory configuration for the agent.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["none", "short-term", "long-term", "persistent"],
+          "example": "persistent"
+        },
+        "store": {
+          "type": "string",
+          "description": "Backing store for memory.",
+          "example": "letta"
+        }
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "description": "Policies that constrain agent behavior.",
+      "items": { "type": "string" },
+      "example": ["no-pii-egress", "max-cost-usd-1", "human-approval-on-refund"]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the agent.",
+      "items": { "type": "string" },
+      "example": ["support", "triage", "customer-facing"]
+    }
+  },
+  "required": ["id", "name", "framework", "model", "instructions"]
+}

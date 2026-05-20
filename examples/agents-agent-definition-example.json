@@ -1,0 +1,39 @@
+{
+  "id": "support-triage-agent",
+  "name": "Support Triage Agent",
+  "description": "Triages inbound support tickets, classifies intent, and either resolves or hands off to a human.",
+  "framework": "langgraph",
+  "model": {
+    "provider": "anthropic",
+    "name": "claude-opus-4-7",
+    "temperature": 0.2
+  },
+  "instructions": "You are a support triage agent. Classify each ticket into one of: billing, technical, account, other. Resolve simple cases using the knowledge base; escalate the rest.",
+  "tools": [
+    {
+      "name": "search_knowledge_base",
+      "type": "function",
+      "description": "Search the support knowledge base for relevant articles."
+    },
+    {
+      "name": "lookup_customer",
+      "type": "api",
+      "description": "Look up a customer record by email or account ID."
+    },
+    {
+      "name": "create_ticket_handoff",
+      "type": "function",
+      "description": "Escalate the ticket to a human support agent with a written summary."
+    }
+  ],
+  "memory": {
+    "type": "persistent",
+    "store": "letta"
+  },
+  "guardrails": [
+    "no-pii-egress",
+    "max-cost-usd-1",
+    "human-approval-on-refund"
+  ],
+  "tags": ["support", "triage", "customer-facing"]
+}
