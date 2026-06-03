@@ -1,0 +1,24 @@
+title: Agents
+description: An index and topic collection covering AI agents, agent frameworks, and
+  agent runtimes that enable autonomous reasoning, tool use, and multi-step task execution.
+  This profile catalogs the platforms and open-source projects that let developers
+  build, orchestrate, and deploy LLM-powered agents, including foundational frameworks
+  like LangChain, LangGraph, CrewAI, AutoGen, and AutoGPT, hosted agent platforms
+  like Lindy, Relevance AI, and Composio, and provider-native agent runtimes from
+  OpenAI, Anthropic, Google, and Microsoft. Distinct from foundation models and from
+  Agent Skills (capability packages), the Agents topic focuses on the orchestration
+  layer where planning, memory, tool calling, and execution come together.
+url: https://agents.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary

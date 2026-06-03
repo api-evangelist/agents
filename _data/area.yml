@@ -1,0 +1,200 @@
+meta:
+  name: Agents
+  description: An index and topic collection covering AI agents, agent frameworks,
+    and agent runtimes that enable autonomous reasoning, tool use, and multi-step
+    task execution. This profile catalogs the platforms and open-source projects that
+    let developers build, orchestrate, and deploy LLM-powered agents, including foundational
+    frameworks like LangChain, LangGraph, CrewAI, AutoGen, and AutoGPT, hosted agent
+    platforms like Lindy, Relevance AI, and Composio, and provider-native agent runtimes
+    from OpenAI, Anthropic, Google, and Microsoft. Distinct from foundation models
+    and from Agent Skills (capability packages), the Agents topic focuses on the orchestration
+    layer where planning, memory, tool calling, and execution come together.
+  tags:
+  - AI Agents
+  - Agent Frameworks
+  - Agent Orchestration
+  - Agent Runtimes
+  - LLM Orchestration
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: agents
+services_tools:
+- name: Agentic AI Foundation
+  repo: https://github.com/api-evangelist/agentic-ai-foundation
+  apisio: https://providers.apis.io/providers/agentic-ai-foundation/
+- name: AgentGateway
+  repo: https://github.com/api-evangelist/agentgateway
+  apisio: https://providers.apis.io/providers/agentgateway/
+- name: AgentQL
+  repo: https://github.com/api-evangelist/agentql
+  apisio: https://providers.apis.io/providers/agentql/
+- name: Amazon Bedrock
+  repo: https://github.com/api-evangelist/amazon-bedrock
+  apisio: https://providers.apis.io/providers/amazon-bedrock/
+- name: Anthropic
+  repo: https://github.com/api-evangelist/anthropic
+  apisio: https://providers.apis.io/providers/anthropic/
+- name: AutoGen
+  repo: https://github.com/api-evangelist/autogen
+  apisio: https://providers.apis.io/providers/autogen/
+- name: AutoGPT
+  repo: https://github.com/api-evangelist/autogpt
+  apisio: https://providers.apis.io/providers/autogpt/
+- name: Bifrost
+  repo: https://github.com/api-evangelist/bifrost
+  apisio: https://providers.apis.io/providers/bifrost/
+- name: Composio
+  repo: https://github.com/api-evangelist/composio
+  apisio: https://providers.apis.io/providers/composio/
+- name: CrewAI
+  repo: https://github.com/api-evangelist/crewai
+  apisio: https://providers.apis.io/providers/crewai/
+- name: Google ADK
+  repo: https://github.com/api-evangelist/google-adk
+  apisio: https://providers.apis.io/providers/google-adk/
+- name: Google Vertex AI
+  repo: https://github.com/api-evangelist/google-vertex-ai
+  apisio: https://providers.apis.io/providers/google-vertex-ai/
+- name: Haystack
+  repo: https://github.com/api-evangelist/haystack
+  apisio: https://providers.apis.io/providers/haystack/
+- name: Jentic
+  repo: https://github.com/api-evangelist/jentic
+  apisio: https://providers.apis.io/providers/jentic/
+- name: kagent
+  repo: https://github.com/api-evangelist/kagent
+  apisio: https://providers.apis.io/providers/kagent/
+- name: LangChain
+  repo: https://github.com/api-evangelist/langchain
+  apisio: https://providers.apis.io/providers/langchain/
+- name: LangGraph
+  repo: https://github.com/api-evangelist/langgraph
+  apisio: https://providers.apis.io/providers/langgraph/
+- name: Letta
+  repo: https://github.com/api-evangelist/letta
+  apisio: https://providers.apis.io/providers/letta/
+- name: Lindy
+  repo: https://github.com/api-evangelist/lindy
+  apisio: https://providers.apis.io/providers/lindy/
+- name: LiveKit
+  repo: https://github.com/api-evangelist/livekit
+  apisio: https://providers.apis.io/providers/livekit/
+- name: LlamaIndex
+  repo: https://github.com/api-evangelist/llamaindex
+  apisio: https://providers.apis.io/providers/llamaindex/
+- name: Microsoft Azure AI Foundry
+  repo: https://github.com/api-evangelist/azure-ai-foundry
+  apisio: https://providers.apis.io/providers/azure-ai-foundry/
+- name: Microsoft Power Virtual Agents
+  repo: https://github.com/api-evangelist/microsoft-power-virtual-agents
+  apisio: https://providers.apis.io/providers/microsoft-power-virtual-agents/
+- name: OpenAI
+  repo: https://github.com/api-evangelist/openai
+  apisio: https://providers.apis.io/providers/openai/
+- name: Portkey
+  repo: https://github.com/api-evangelist/portkey
+  apisio: https://providers.apis.io/providers/portkey/
+- name: Relevance AI
+  repo: https://github.com/api-evangelist/relevance-ai
+  apisio: https://providers.apis.io/providers/relevance-ai/
+- name: Restack
+  repo: https://github.com/api-evangelist/restack
+  apisio: https://providers.apis.io/providers/restack/
+- name: Stackmint
+  repo: https://github.com/api-evangelist/stackmint
+  apisio: https://providers.apis.io/providers/stackmint/
+- name: SuperAgent
+  repo: https://github.com/api-evangelist/superagent
+  apisio: https://providers.apis.io/providers/superagent/
+- name: Toolhouse
+  repo: https://github.com/api-evangelist/toolhouse
+  apisio: https://providers.apis.io/providers/toolhouse/
+- name: Trigger.dev
+  repo: https://github.com/api-evangelist/trigger-dev
+  apisio: https://providers.apis.io/providers/trigger-dev/
+- name: TrueFoundry
+  repo: https://github.com/api-evangelist/truefoundry
+  apisio: https://providers.apis.io/providers/truefoundry/
+features:
+- name: Planning and Reasoning Loops
+  description: Agent frameworks like LangGraph, AutoGen, and CrewAI provide structured
+    loops for planning, reflection, and multi-step reasoning over user goals, breaking
+    complex tasks into ordered sub-tasks.
+- name: Tool Calling and Function Use
+  description: Agents invoke external functions, APIs, and aggregated tool catalogs
+    through provider-native tool calling, expanding their reach beyond text generation
+    into real-world action.
+- name: Memory and State Management
+  description: Frameworks like Letta and LangGraph provide persistent memory, conversation
+    state, and long-running execution context so agents can resume work, remember
+    users, and accumulate knowledge over time.
+- name: Multi-Agent Orchestration
+  description: CrewAI, AutoGen, and LangGraph enable multiple specialized agents to
+    collaborate, delegate sub-tasks, and reach consensus, modeling teams of role-based
+    workers around a shared goal.
+- name: Provider-Native Agent Runtimes
+  description: OpenAI Assistants, Anthropic Claude tool use, Google ADK, Amazon Bedrock
+    Agents, and Microsoft Azure AI Foundry expose first-party agent runtimes that
+    handle planning, tool invocation, and state on the model provider side.
+- name: Browser and Web Agents
+  description: Agents like AgentQL and browser-driving frameworks let LLMs navigate
+    real web pages, fill forms, and extract structured data, extending agent reach
+    to systems that lack APIs.
+- name: Observability and Evaluation
+  description: Platforms like Portkey, TrueFoundry, and Bifrost provide tracing, evaluation,
+    cost tracking, and gateway routing across agent runs to make agent behavior observable
+    and debuggable.
+- name: Open Governance and Interoperability
+  description: The Linux Foundation Agentic AI Foundation and projects like kagent
+    and AgentGateway are establishing open standards for agent-to-agent communication,
+    identity, and runtime portability.
+use_cases:
+- name: Customer Support Automation
+  description: Hosted agent platforms like Lindy, Relevance AI, and Microsoft Power
+    Virtual Agents handle inbound support tickets, route conversations, and resolve
+    common requests end-to-end.
+- name: Research and Knowledge Work
+  description: LangChain and LlamaIndex agents combine retrieval over enterprise documents
+    with reasoning to answer complex questions and synthesize multi-source briefings.
+- name: Sales and Outbound Workflows
+  description: Agents built on Lindy, Relevance AI, and Composio prospect leads, draft
+    outreach, log CRM activity, and orchestrate multi-step sales sequences.
+- name: Software Engineering Agents
+  description: AutoGPT, AutoGen, and CrewAI-based engineering agents read repositories,
+    draft pull requests, run tests, and iterate on code under human review.
+- name: Voice and Telephony Agents
+  description: LiveKit and similar runtimes power real-time voice agents that handle
+    phone calls, meetings, and live conversations using streaming LLMs and tool calling.
+- name: Internal Operations and IT Automation
+  description: Agentic platforms like Restack, Trigger.dev, and Stackmint orchestrate
+    long-running internal workflows across SaaS, databases, and identity systems.
+- name: Multi-Agent Team Simulations
+  description: CrewAI and AutoGen model role-based teams (researcher, writer, reviewer)
+    collaborating on a single deliverable, producing higher-quality output than a
+    single agent.
+integrations:
+- name: LangChain
+  description: The most widely used open-source framework for building LLM applications,
+    including chains, agents, retrieval, memory, and tool calling across dozens of
+    providers.
+- name: LangGraph
+  description: A graph-based runtime from LangChain for stateful, multi-actor, long-running
+    agent workflows with checkpointing and human-in-the-loop.
+- name: CrewAI
+  description: Multi-agent framework for orchestrating role-based agent crews that
+    collaborate on complex tasks.
+- name: AutoGen
+  description: Microsoft's open-source framework for building multi-agent conversations
+    with planner, executor, and critic roles.
+- name: Composio
+  description: Agent execution platform exposing 1000+ apps as governed tools for
+    any agent framework or model.
+- name: Letta
+  description: Stateful agent platform (formerly MemGPT) focused on long-term memory
+    and persistent agent identity.
+- name: OpenAI Assistants
+  description: OpenAI's hosted agent runtime with built-in tool use, retrieval, code
+    interpreter, and threads.
+- name: Amazon Bedrock Agents
+  description: AWS's managed agent runtime over foundation models with action groups,
+    knowledge bases, and guardrails.
