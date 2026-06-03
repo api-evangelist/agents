@@ -8,6 +8,7 @@ layout: default
   <!-- Services & Tools -->
   <section class="mb-5">
     <h2 class="section-title mb-3"><span class="material-symbols-outlined">handyman</span>Services &amp; Tools</h2>
+    {% if site.data.area.services_tools.size == 0 %}<p class="text-muted small">No network properties listed yet.</p>{% endif %}
     <div class="list-group">
       {% for s in site.data.area.services_tools %}
       <div class="list-group-item d-flex align-items-center justify-content-between flex-wrap gap-2">
