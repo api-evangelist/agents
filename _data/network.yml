@@ -1,0 +1,31 @@
+related:
+- name: Agent Skills
+  url: https://agents-skills.apievangelist.com
+  icon: https://agents-skills.apievangelist.com/icon.png
+  description: An index and topic collection covering Agent Skills, the packaged, file-based capability
+    units that AI coding agents load to extend their behavior. Agent Skills bundle…
+- name: AI Automation
+  url: https://ai-automation.apievangelist.com
+  icon: https://ai-automation.apievangelist.com/icon.png
+  description: AI automation combines artificial intelligence with workflow and process automation to
+    create intelligent, autonomous systems including AI agent frameworks, autonomous coding…
+- name: Containers
+  url: https://containers.apievangelist.com
+  icon: https://containers.apievangelist.com/icon.png
+  description: An index of container runtime, orchestration, registry, security, and build tool repositories
+    tracking the services and tools that package, deploy, and manage containerized…
+- name: Pro-Code API Composition
+  url: https://pro-code-api-composition.apievangelist.com
+  icon: https://pro-code-api-composition.apievangelist.com/icon.png
+  description: An index of pro-code API composition service and tooling repos being tracked by the API
+    Evangelist network, covering workflow engines, code-first platforms, serverless…
+- name: iPaaS
+  url: https://ipaas.apievangelist.com
+  icon: https://ipaas.apievangelist.com/icon.png
+  description: This is the index of iPaaS (integration platform as a service) repos being tracked by the
+    API Evangelist network.
+- name: AIOps
+  url: https://aiops.apievangelist.com
+  icon: https://aiops.apievangelist.com/icon.png
+  description: AIOps applies artificial intelligence and machine learning to IT operations, enabling intelligent
+    alerting, anomaly detection, automated root cause analysis, and predictive…
