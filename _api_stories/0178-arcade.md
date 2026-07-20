@@ -1,7 +1,7 @@
 ---
-title: 'Goose: the open-source agent that shaped MCP'
-link: https://www.arcade.dev/blog/goose-the-open-source-agent-that-shaped-mcp/
-published: '2026-04-02'
+title: The NSA Just Wrote the MCP Requirements Document
+link: https://www.arcade.dev/blog/nsa-mcp-requirements-document/
+published: '2026-06-18'
 provider: arcade
 repo: https://github.com/api-evangelist/arcade
 domain: www.arcade.dev
