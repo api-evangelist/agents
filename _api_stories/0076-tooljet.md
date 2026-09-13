@@ -1,7 +1,7 @@
 ---
-title: What Do You Build With a Brand-New MCP? We Built a “Launch War Room”
-link: https://blog.tooljet.com/what-do-you-build-with-a-brand-new-mcp-we-built-a-launch-war-room/
-published: '2026-08-28'
+title: Model Context Protocol (MCP) in ToolJet
+link: https://blog.tooljet.com/tooljet-mcp-model-context-protocol/
+published: '2026-09-04'
 provider: tooljet
 repo: https://github.com/api-evangelist/tooljet
 domain: blog.tooljet.com
