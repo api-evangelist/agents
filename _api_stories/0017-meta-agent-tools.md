@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Writ Cloud'
-link: https://agentalog.com/api/listings/mcp_app_usewrit_writ_cloud_cb1969ec
-published: '2026-10-10'
+title: 'mcp: Airefs'
+link: https://agentalog.com/api/listings/mcp_com_getairefs_airefs_df8f0c43
+published: '2026-10-17'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

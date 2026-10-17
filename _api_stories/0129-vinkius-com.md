@@ -1,7 +1,7 @@
 ---
-title: Home Spa Planner MCP
-link: https://vinkius.com/en/ai-agent-connect/home-spa-planner
-published: '2026-10-08'
+title: Collection Storage Change Approval MCP
+link: https://vinkius.com/en/ai-agent-connect/collection-storage-change-approval
+published: '2026-10-12'
 provider: vinkius-com
 repo: https://github.com/api-evangelist/vinkius-com
 domain: vinkius.com

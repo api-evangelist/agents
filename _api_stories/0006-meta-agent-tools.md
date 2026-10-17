@@ -1,7 +1,7 @@
 ---
-title: 'mcp: io.github.library-x/tuney'
-link: https://agentalog.com/api/listings/mcp_io_github_library_x_tuney_7dba29ca
-published: '2026-10-10'
+title: 'mcp: GrowthVector'
+link: https://agentalog.com/api/listings/mcp_io_growthvector_mcp_095ebfb4
+published: '2026-10-17'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com
