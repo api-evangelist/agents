@@ -1,7 +1,7 @@
 ---
-title: MCP Chat was re-checked
-link: https://neuronto.com/publishers/umar-ashrfy
-published: '2026-10-10'
+title: Amazon Seller Central & Ads MCP stopped answering
+link: https://neuronto.com/publishers/ai.agentxray
+published: '2026-10-17'
 provider: neuronto
 repo: https://github.com/api-evangelist/neuronto
 domain: neuronto.com

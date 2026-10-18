@@ -1,7 +1,7 @@
 ---
-title: Evening Routine Builder MCP
-link: https://vinkius.com/en/ai-agent-connect/evening-routine-builder
-published: '2026-10-08'
+title: Relocation Expense Planner MCP
+link: https://vinkius.com/en/ai-agent-connect/relocation-expense-planner
+published: '2026-10-12'
 provider: vinkius-com
 repo: https://github.com/api-evangelist/vinkius-com
 domain: vinkius.com
