@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Yet Another Clearing (read-only)'
-link: https://agentalog.com/api/listings/mcp_com_yetanotherclearing_yet_another_clear_cd7cfe39
-published: '2026-10-17'
+title: 'mcp: Agent Puzzle Bounty — cooperative k-of-n decode challenge'
+link: https://agentalog.com/api/listings/mcp_ai_brevium_agent_puzzle_bounty_ff6b5abc
+published: '2026-10-24'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

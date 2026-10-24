@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Repostit'
-link: https://agentalog.com/api/listings/mcp_io_github_hax98_repostit_8ecdd905
-published: '2026-10-17'
+title: 'mcp: Papershift MCP by usefulapi'
+link: https://agentalog.com/api/listings/mcp_io_usefulapi_papershift_935853c6
+published: '2026-10-24'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

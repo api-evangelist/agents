@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Epeaky host'
-link: https://agentalog.com/api/listings/mcp_io_github_zyn_io_epeaky_host_mcp_92fe5bd4
-published: '2026-10-17'
+title: 'mcp: AgendaPro MCP by usefulapi'
+link: https://agentalog.com/api/listings/mcp_io_usefulapi_agendapro_ad66382f
+published: '2026-10-24'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

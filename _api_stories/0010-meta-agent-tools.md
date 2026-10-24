@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Engram'
-link: https://agentalog.com/api/listings/mcp_ro_rootcause_engram_d1a1bec2
-published: '2026-10-17'
+title: 'mcp: LFG Atlas'
+link: https://agentalog.com/api/listings/mcp_dev_pages_lfgatlas_lfg_atlas_bbe9293a
+published: '2026-10-24'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com
