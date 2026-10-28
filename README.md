@@ -1,125 +1,97 @@
-# Agents (agents)
+# Agents
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering AI agents, agent frameworks, and agent runtimes that enable autonomous reasoning, tool use, and multi-step task execution. This profile catalogs the platforms and open-source projects that let developers build, orchestrate, and deploy LLM-powered agents, including foundational frameworks like LangChain, LangGraph, CrewAI, AutoGen, and AutoGPT, hosted agent platforms like Lindy, Relevance AI, and Composio, and provider-native agent runtimes from OpenAI, Anthropic, Google, and Microsoft. Distinct from foundation models and from Agent Skills (capability packages), the Agents topic focuses on the orchestration layer where planning, memory, tool calling, and execution come together.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** AI Agents · Agent Frameworks · Agent Orchestration · Agent Runtimes · LLM Orchestration
 
-## Tags:
+## Agents on APIs.io
 
- - AI Agents, Agent Frameworks, Agent Orchestration, Agent Runtimes, LLM Orchestration
+Everything profiled for Agents is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agents/](https://apis.io/providers/agents/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Agent Definition Schema](https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/json-schema/agents-agent-definition-schema.json)
-- [JSONSchema - Agent Run Schema](https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/json-schema/agents-agent-run-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/json-ld/agents-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/agents/refs/heads/main/vocabulary/agents-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Planning and Reasoning Loops | Agent frameworks like LangGraph, AutoGen, and CrewAI provide structured loops for planning, reflection, and multi-step reasoning over user goals. |
-| Tool Calling and Function Use | Agents invoke external functions, APIs, and aggregated tool catalogs through provider-native tool calling, expanding their reach beyond text generation. |
-| Memory and State Management | Frameworks like Letta and LangGraph provide persistent memory, conversation state, and long-running execution context for agents. |
-| Multi-Agent Orchestration | CrewAI, AutoGen, and LangGraph enable multiple specialized agents to collaborate, delegate sub-tasks, and reach consensus around a shared goal. |
-| Provider-Native Agent Runtimes | OpenAI Assistants, Anthropic Claude tool use, Google ADK, Amazon Bedrock Agents, and Microsoft Azure AI Foundry expose first-party agent runtimes. |
-| Browser and Web Agents | Agents like AgentQL and browser-driving frameworks let LLMs navigate real web pages, fill forms, and extract structured data. |
-| Observability and Evaluation | Portkey, TrueFoundry, and Bifrost provide tracing, evaluation, cost tracking, and gateway routing across agent runs. |
-| Open Governance and Interoperability | The Agentic AI Foundation, kagent, and AgentGateway establish open standards for agent-to-agent communication and runtime portability. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Customer Support Automation | Hosted agent platforms like Lindy, Relevance AI, and Microsoft Power Virtual Agents handle inbound support tickets and resolve common requests. |
-| Research and Knowledge Work | LangChain and LlamaIndex agents combine retrieval over enterprise documents with reasoning to answer complex questions and synthesize briefings. |
-| Sales and Outbound Workflows | Agents built on Lindy, Relevance AI, and Composio prospect leads, draft outreach, log CRM activity, and orchestrate multi-step sales sequences. |
-| Software Engineering Agents | AutoGPT, AutoGen, and CrewAI-based engineering agents read repositories, draft pull requests, run tests, and iterate on code under human review. |
-| Voice and Telephony Agents | LiveKit and similar runtimes power real-time voice agents that handle phone calls, meetings, and live conversations using streaming LLMs. |
-| Internal Operations and IT Automation | Agentic platforms like Restack, Trigger.dev, and Stackmint orchestrate long-running internal workflows across SaaS, databases, and identity systems. |
-| Multi-Agent Team Simulations | CrewAI and AutoGen model role-based teams (researcher, writer, reviewer) collaborating on a single deliverable. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Agents: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| LangChain | The most widely used open-source framework for building LLM applications, including chains, agents, retrieval, memory, and tool calling. |
-| LangGraph | A graph-based runtime from LangChain for stateful, multi-actor, long-running agent workflows with checkpointing and human-in-the-loop. |
-| CrewAI | Multi-agent framework for orchestrating role-based agent crews that collaborate on complex tasks. |
-| AutoGen | Microsoft's open-source framework for building multi-agent conversations with planner, executor, and critic roles. |
-| Composio | Agent execution platform exposing 1000+ apps as governed tools for any agent framework or model. |
-| Letta | Stateful agent platform (formerly MemGPT) focused on long-term memory and persistent agent identity. |
-| OpenAI Assistants | OpenAI's hosted agent runtime with built-in tool use, retrieval, code interpreter, and threads. |
-| Amazon Bedrock Agents | AWS's managed agent runtime over foundation models with action groups, knowledge bases, and guardrails. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable specifications for the Agents topic, organized by format.
-
-### JSON Schema
-
-- [Agent Definition Schema](json-schema/agents-agent-definition-schema.json)
-- [Agent Run Schema](json-schema/agents-agent-run-schema.json)
-
-### JSON Structure
-
-- [Agent Definition Structure](json-structure/agents-agent-definition-structure.json)
-- [Agent Run Structure](json-structure/agents-agent-run-structure.json)
-
-### JSON-LD
-
-- [Agents Context](json-ld/agents-context.jsonld)
-
-## Vocabulary
-
-- [Agents Vocabulary](vocabulary/agents-vocabulary.yaml) — Unified taxonomy mapping core resources, actions, workflows, and personas across agent frameworks, hosted agent platforms, and provider-native agent runtimes
-
-## Network
-
-This index references the following AI agent, agent framework, and agent runtime repositories:
-
-- [Agentic AI Foundation](https://github.com/api-evangelist/agentic-ai-foundation)
-- [AgentGateway](https://github.com/api-evangelist/agentgateway)
-- [AgentQL](https://github.com/api-evangelist/agentql)
-- [Amazon Bedrock](https://github.com/api-evangelist/amazon-bedrock)
-- [Anthropic](https://github.com/api-evangelist/anthropic)
-- [AutoGen](https://github.com/api-evangelist/autogen)
-- [AutoGPT](https://github.com/api-evangelist/autogpt)
-- [Bifrost](https://github.com/api-evangelist/bifrost)
-- [Composio](https://github.com/api-evangelist/composio)
-- [CrewAI](https://github.com/api-evangelist/crewai)
-- [Google ADK](https://github.com/api-evangelist/google-adk)
-- [Google Vertex AI](https://github.com/api-evangelist/google-vertex-ai)
-- [Haystack](https://github.com/api-evangelist/haystack)
-- [Jentic](https://github.com/api-evangelist/jentic)
-- [kagent](https://github.com/api-evangelist/kagent)
-- [LangChain](https://github.com/api-evangelist/langchain)
-- [LangGraph](https://github.com/api-evangelist/langgraph)
-- [Letta](https://github.com/api-evangelist/letta)
-- [Lindy](https://github.com/api-evangelist/lindy)
-- [LiveKit](https://github.com/api-evangelist/livekit)
-- [LlamaIndex](https://github.com/api-evangelist/llamaindex)
-- [Microsoft Azure AI Foundry](https://github.com/api-evangelist/azure-ai-foundry)
-- [Microsoft Power Virtual Agents](https://github.com/api-evangelist/microsoft-power-virtual-agents)
-- [OpenAI](https://github.com/api-evangelist/openai)
-- [Portkey](https://github.com/api-evangelist/portkey)
-- [Relevance AI](https://github.com/api-evangelist/relevance-ai)
-- [Restack](https://github.com/api-evangelist/restack)
-- [Stackmint](https://github.com/api-evangelist/stackmint)
-- [SuperAgent](https://github.com/api-evangelist/superagent)
-- [Toolhouse](https://github.com/api-evangelist/toolhouse)
-- [Trigger.dev](https://github.com/api-evangelist/trigger-dev)
-- [TrueFoundry](https://github.com/api-evangelist/truefoundry)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agents/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
