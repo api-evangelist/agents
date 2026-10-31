@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Corsizio MCP by usefulapi'
-link: https://agentalog.com/api/listings/mcp_io_usefulapi_corsizio_df4be032
-published: '2026-10-24'
+title: 'mcp: GitHubCard'
+link: https://agentalog.com/api/listings/mcp_com_githubcard_mcp_b32e7100
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

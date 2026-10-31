@@ -1,7 +1,7 @@
 ---
-title: 'mcp: LFG Atlas'
-link: https://agentalog.com/api/listings/mcp_dev_pages_lfgatlas_lfg_atlas_bbe9293a
-published: '2026-10-24'
+title: 'mcp: ai.dedox/dedox'
+link: https://agentalog.com/api/listings/mcp_indices_url_api_dedox_ai_mcp_66ec2894
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Method CRM MCP by usefulapi'
-link: https://agentalog.com/api/listings/mcp_io_usefulapi_method_crm_c4993b64
-published: '2026-10-24'
+title: 'mcp: Aldine'
+link: https://agentalog.com/api/listings/mcp_io_github_trahloff_aldine_6d5b7d1a
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

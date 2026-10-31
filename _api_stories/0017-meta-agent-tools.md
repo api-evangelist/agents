@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Tileio'
-link: https://agentalog.com/api/listings/mcp_com_tileio_tileio_5be72ca7
-published: '2026-10-24'
+title: 'mcp: RankCLI'
+link: https://agentalog.com/api/listings/mcp_indices_repo_integrallis_rankcli_mcp_ser_3716358e
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

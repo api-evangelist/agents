@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Persistent text store'
-link: https://agentalog.com/api/listings/mcp_org_duckdns_keepthis_persistent_text_sto_30771a24
-published: '2026-10-24'
+title: 'mcp: Pokerai API'
+link: https://agentalog.com/api/listings/mcp_io_github_pokerai_bet_mcp_eb9fbb4c
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

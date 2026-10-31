@@ -1,7 +1,7 @@
 ---
-title: 'mcp: Papershift MCP by usefulapi'
-link: https://agentalog.com/api/listings/mcp_io_usefulapi_papershift_935853c6
-published: '2026-10-24'
+title: 'mcp: AudioAtlas'
+link: https://agentalog.com/api/listings/mcp_com_audioatlas_audioatlas_8f663a45
+published: '2026-10-31'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com
