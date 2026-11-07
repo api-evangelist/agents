@@ -1,7 +1,7 @@
 ---
-title: 'mcp: apifirme'
-link: https://agentalog.com/api/listings/mcp_indices_url_api_apifirme_dev_mcp_22cee694
-published: '2026-10-31'
+title: 'mcp: UK Data: Science formulas'
+link: https://agentalog.com/api/listings/mcp_uk_co_reliness_science_formulas_3ba7a19b
+published: '2026-11-07'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com

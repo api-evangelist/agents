@@ -1,7 +1,7 @@
 ---
-title: 'mcp: ZTL Judge'
-link: https://agentalog.com/api/listings/mcp_indices_url_api_vitalyreznik_com_mcp_539e9049
-published: '2026-10-31'
+title: 'mcp: Gearlist'
+link: https://agentalog.com/api/listings/mcp_build_gearlist_gearlist_7dc95510
+published: '2026-11-07'
 provider: meta-agent-tools
 repo: https://github.com/api-evangelist/meta-agent-tools
 domain: agentalog.com
